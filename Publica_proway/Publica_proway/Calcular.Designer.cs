@@ -94,7 +94,7 @@
             this.btncalcmax.Name = "btncalcmax";
             this.btncalcmax.Size = new System.Drawing.Size(146, 44);
             this.btncalcmax.TabIndex = 11;
-            this.btncalcmax.Text = "Calcular Maximo";
+            this.btncalcmax.Text = "Calcular Placar Maximo";
             this.btncalcmax.UseVisualStyleBackColor = false;
             this.btncalcmax.Click += new System.EventHandler(this.btncalcmax_Click);
             // 
@@ -105,7 +105,7 @@
             this.btncalcmin.Name = "btncalcmin";
             this.btncalcmin.Size = new System.Drawing.Size(146, 44);
             this.btncalcmin.TabIndex = 10;
-            this.btncalcmin.Text = "Calacular Minimo";
+            this.btncalcmin.Text = "Calacular Placar Minimo ";
             this.btncalcmin.UseVisualStyleBackColor = false;
             this.btncalcmin.Click += new System.EventHandler(this.btncalcmin_Click);
             // 

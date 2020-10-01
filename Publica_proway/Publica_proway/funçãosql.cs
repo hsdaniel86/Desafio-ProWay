@@ -29,6 +29,11 @@ namespace Publica_proway
                 // comando de carrega variavel table no dataDridView
                 grid.DataSource = table;
             }
+            catch(FormatException fex)
+            {   
+                // caso o usuario inserir dado
+                MessageBox.Show(fex.ToString());
+            }
             catch (Exception ex)
             {
                 // caso o codigo não execute retorna o motivo da falha 

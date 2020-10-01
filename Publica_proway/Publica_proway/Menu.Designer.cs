@@ -28,11 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnfechar = new System.Windows.Forms.Button();
-            this.btntabela = new System.Windows.Forms.Button();
-            this.btncalculardados = new System.Windows.Forms.Button();
             this.btninserirdados = new System.Windows.Forms.Button();
+            this.btnfechar = new System.Windows.Forms.Button();
+            this.btnconsultar = new System.Windows.Forms.Button();
+            this.btncalculardados = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btninserirdados
+            // 
+            this.btninserirdados.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btninserirdados.Location = new System.Drawing.Point(12, 12);
+            this.btninserirdados.Name = "btninserirdados";
+            this.btninserirdados.Size = new System.Drawing.Size(146, 44);
+            this.btninserirdados.TabIndex = 11;
+            this.btninserirdados.Text = "Inserir dados";
+            this.btninserirdados.UseVisualStyleBackColor = false;
+            this.btninserirdados.Click += new System.EventHandler(this.btninserirdados_Click_1);
             // 
             // btnfechar
             // 
@@ -45,38 +56,27 @@
             this.btnfechar.UseVisualStyleBackColor = false;
             this.btnfechar.Click += new System.EventHandler(this.btnfechar_Click);
             // 
-            // btntabela
+            // btnconsultar
             // 
-            this.btntabela.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btntabela.Location = new System.Drawing.Point(12, 151);
-            this.btntabela.Name = "btntabela";
-            this.btntabela.Size = new System.Drawing.Size(146, 44);
-            this.btntabela.TabIndex = 6;
-            this.btntabela.Text = "tabela";
-            this.btntabela.UseVisualStyleBackColor = false;
-            this.btntabela.Click += new System.EventHandler(this.btntabela_Click);
+            this.btnconsultar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnconsultar.Location = new System.Drawing.Point(12, 154);
+            this.btnconsultar.Name = "btnconsultar";
+            this.btnconsultar.Size = new System.Drawing.Size(146, 44);
+            this.btnconsultar.TabIndex = 9;
+            this.btnconsultar.Text = "Consultar";
+            this.btnconsultar.UseVisualStyleBackColor = false;
+            this.btnconsultar.Click += new System.EventHandler(this.btnconsultar_Click);
             // 
             // btncalculardados
             // 
             this.btncalculardados.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btncalculardados.Location = new System.Drawing.Point(12, 80);
+            this.btncalculardados.Location = new System.Drawing.Point(12, 83);
             this.btncalculardados.Name = "btncalculardados";
             this.btncalculardados.Size = new System.Drawing.Size(146, 44);
-            this.btncalculardados.TabIndex = 5;
-            this.btncalculardados.Text = "calcular";
+            this.btncalculardados.TabIndex = 10;
+            this.btncalculardados.Text = "Calcular";
             this.btncalculardados.UseVisualStyleBackColor = false;
-            this.btncalculardados.Click += new System.EventHandler(this.btncalculardados_Click);
-            // 
-            // btninserirdados
-            // 
-            this.btninserirdados.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btninserirdados.Location = new System.Drawing.Point(12, 15);
-            this.btninserirdados.Name = "btninserirdados";
-            this.btninserirdados.Size = new System.Drawing.Size(146, 44);
-            this.btninserirdados.TabIndex = 4;
-            this.btninserirdados.Text = "inserir dados";
-            this.btninserirdados.UseVisualStyleBackColor = false;
-            this.btninserirdados.Click += new System.EventHandler(this.btninserirdados_Click);
+            this.btncalculardados.Click += new System.EventHandler(this.btncalculardados_Click_1);
             // 
             // Menu
             // 
@@ -84,10 +84,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(169, 276);
-            this.Controls.Add(this.btnfechar);
-            this.Controls.Add(this.btntabela);
-            this.Controls.Add(this.btncalculardados);
             this.Controls.Add(this.btninserirdados);
+            this.Controls.Add(this.btncalculardados);
+            this.Controls.Add(this.btnconsultar);
+            this.Controls.Add(this.btnfechar);
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);
@@ -95,10 +95,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnfechar;
-        private System.Windows.Forms.Button btntabela;
-        private System.Windows.Forms.Button btncalculardados;
         private System.Windows.Forms.Button btninserirdados;
+        private System.Windows.Forms.Button btnfechar;
+        private System.Windows.Forms.Button btnconsultar;
+        private System.Windows.Forms.Button btncalculardados;
     }
 }
